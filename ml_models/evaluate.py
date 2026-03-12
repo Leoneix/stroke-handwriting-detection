@@ -11,7 +11,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 
 
-loader = StrokeDatasetLoader("data/raw")
+loader = StrokeDatasetLoader(os.path.join(os.path.dirname(__file__), "..", "data", "raw"))
 
 X, y = loader.load_dataset()
 
